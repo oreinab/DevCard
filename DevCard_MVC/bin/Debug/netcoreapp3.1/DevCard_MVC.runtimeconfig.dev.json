@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Oreynab\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Oreynab\\.nuget\\packages"
+    ]
+  }
+}

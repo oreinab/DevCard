@@ -1,0 +1,38 @@
+﻿@model List<Project>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<section class="featured-section p-3 p-lg-5">
+    <div class="container">
+        <h2 class="section-title font-weight-bold mb-5">خاص ترین پروژه ها</h2>
+        <div class="row">
+            @foreach (var p in Model)
+            {
+                <div class="col-md-6 mb-5">
+                    <div class="card project-card">
+                        <div class="row no-gutters">
+                            <div class="col-lg-4 card-img-holder">
+                                <img src="~/assets/images/project/@p.Image" class="card-img" alt="image">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <a href="#" class="theme-link">
+                                            @p.Title
+                                        </a>
+                                    </h5>
+                                    <p class="card-text">
+                                        @p.Description
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">@p.Client</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
